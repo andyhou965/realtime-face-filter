@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Face Mesh</title>
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Javascript imports -->
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+		<script src="script.js"></script>
+
+		<script>
+			main();
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<video autoplay muted playsinline hidden id="video"></video>
+			<h1 id="perf"></h1>
+			<canvas id="facecanvas"></canvas>
+		</div>
+	</body>
+</html>
